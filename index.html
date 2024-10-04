@@ -8,6 +8,24 @@
 </head>
 <body>
     <div class="main">
+        <div class="game_color_picker_overlay">
+            <p>Choose Custom Colors for your X and O:</p>
+            <br>
+            <div class="color_box_of_x">
+                <label for="color_of_x" id="label_of_x">Choose a color for X</label>
+                <input type="color" id="color_of_x" value="#0095cc">
+            </div>
+            <div class="color_box_of_o">
+                <label for="color_of_o" id="label_of_o">Choose a color for O</label>
+                <input type="color" id="color_of_o" value="#f32e06">
+            </div>
+            <div class="xo_box">
+                <div id="x">X</div>
+                <div id="o">O</div>
+            </div>
+            <button type="" id="start_button">Start the Game</button>
+
+        </div>
         <div class="content blue_shadow">
             <div class="game_chance_winner">
                 <div class="game_chance_overlay left">X</div>
@@ -24,7 +42,7 @@
                 <div class="cell21" data-isFilled = "false"></div>
                 <div class="cell22" data-isFilled = "false"></div>
             </div>
-            <button type="button">Reset</button>
+            <button type="button" id="reset_button">Reset</button>
         </div>
     </div>
     <script src="app.js"></script>
